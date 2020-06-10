@@ -7,7 +7,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.preference_preference
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_PACKAGE_NAME := SamsungParts
+LOCAL_PACKAGE_NAME := MediatekParts
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
@@ -16,9 +16,9 @@ LOCAL_USE_AAPT2 := true
 
 package_resource_overlays := $(strip \
     $(wildcard $(foreach dir, $(PRODUCT_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/SamsungParts/res))) \
+      $(addprefix $(dir)/, packages/apps/MediatekParts/res))) \
     $(wildcard $(foreach dir, $(DEVICE_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/SamsungParts/res))))
+      $(addprefix $(dir)/, packages/apps/MediatekParts/res))))
 
 LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
 

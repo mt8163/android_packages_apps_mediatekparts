@@ -49,7 +49,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.preferences_samsung_parts, rootKey);
+        setPreferencesFromResource(R.xml.preferences_mediatek_parts, rootKey);
 
         String device = FileUtils.getStringProp("ro.build.product", "unknown");
 
